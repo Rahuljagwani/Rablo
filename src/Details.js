@@ -10,7 +10,7 @@ function Details(authorized) {
     }
     return (
 
-        <><div className="container" style={{ width:"35%" }}>
+        <><div className="container" style={{ width:"80%" }}>
             <h3 style={{ textAlign:"center" }}>DETAILS</h3>
         <hr></hr>
         <h5 style={{ textAlign:"center" }}>Personal details</h5>
