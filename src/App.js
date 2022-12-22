@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import Mform from './Mform';
+import React  from "react";
+import Details from './Details';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
+import { HashRouter, Routes, Route } from "react-router-dom";
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route exact path="/" element={<Mform />} />
+        <Route exact path="/details" 
+        element={<Details authorized={false} />}
+          />
+      </Routes>
+    </HashRouter>
   );
 }
 
